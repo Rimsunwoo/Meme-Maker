@@ -5,5 +5,29 @@ canvas {
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+#paintBtn {
+  width: 90px;
+  height: 90px;
+  font-size: 50px;
+}
+
+#lineWidth {
+  width: 500px;
+}
+
+#color-input {
+  width: 100px;
+  height: 50px;
+}
+.color-option {
+  width: 60px;
+  height: 60px;
+}
+#colorBox {
+  display: flex;
+  cursor: pointer;
 }
