@@ -54,8 +54,7 @@ label {
   justify-content: center;
   align-items: center;
 }
-#text,
-#file {
+#text {
   width: 360px;
   height: 35px;
   font-size: 20px;
@@ -64,10 +63,16 @@ label {
 }
 label {
   width: 180px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 700;
 }
 button:hover {
   transform: scale(1.2);
 }
 label:hover {
   transform: scale(1.2);
+}
+input#file {
+  display: none;
 }
