@@ -1,33 +1,73 @@
+@import "reset.css";
+
 canvas {
   width: 800px;
   height: 800px;
   border: 2px solid black;
+  border-radius: 10%;
+  background-color: white;
+  margin-left: 20px;
 }
 body {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 50px;
+  background-color: gainsboro;
+  gap: 10px;
 }
 
-#paintBtn {
-  width: 90px;
-  height: 90px;
-  font-size: 50px;
+#color-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
-#lineWidth {
-  width: 500px;
+.color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid white;
 }
-
-#color-input {
+.color-option:hover {
+  transform: scale(1.2);
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+button,
+label {
+  all: unset;
   width: 100px;
   height: 50px;
-}
-.color-option {
-  width: 60px;
-  height: 60px;
-}
-#colorBox {
+  font-size: 30px;
+  font-weight: 700;
+  background-color: royalblue;
+  color: white;
+  border: 3px solid;
+  border-radius: 20px;
   display: flex;
-  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+#text,
+#file {
+  width: 360px;
+  height: 35px;
+  font-size: 20px;
+  border: solid 3px;
+  border-radius: 10px;
+}
+label {
+  width: 180px;
+}
+button:hover {
+  transform: scale(1.2);
+}
+label:hover {
+  transform: scale(1.2);
 }
